@@ -1,0 +1,26 @@
+{
+  "name": "chaink-backend",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "start": "bun run src/server.ts",
+    "test": "bun test",
+    "dev": "bun --hot src/server.ts",
+    "lint": "rome check src",
+    "lint:fix": "rome check src --apply",
+    "format": "rome format src --write",
+    "prepare": "husky install || exit 0"
+  },
+  "dependencies": {
+    "elysia": "^0.2.9",
+    "lru-cache": "^7.18.1",
+    "postgres": "^3.3.3"
+  },
+  "devDependencies": {
+    "bun-types": "^0.5.7",
+    "husky": "^8.0.3",
+    "lint-staged": "^13.1.2",
+    "prettier": "^2.8.4",
+    "rome": "^11.0.0"
+  }
+}

@@ -1,0 +1,4 @@
+{
+  "*.{json,yml,yaml,md} ": "prettier --write",
+  "*.{js,ts}": ["rome check --apply", "rome format --write"]
+}
